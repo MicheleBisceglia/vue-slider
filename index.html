@@ -21,8 +21,8 @@
         </div>
         <div class="thumbs">
             
-            <div class="thumb active">
-                <img id="slides" :src="image1" alt="">
+            <div v-for="item in slide" class="thumb active">
+                <img id="slides" :src="item.image" alt="">
             </div>
         
             <div class="prev"></div>
