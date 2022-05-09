@@ -21,8 +21,8 @@
         </div>
         <div class="thumbs">
             
-            <div @click="next" class="prev"></div>
-            <div @click="prev" class="next"></div>
+            <div @click="prev" class="prev"></div>
+            <div @click="next" class="next"></div>
             
             <div class="thumb" v-for="(item,index) in slide"
                  :class="{ active: index === currentSlide}" >
