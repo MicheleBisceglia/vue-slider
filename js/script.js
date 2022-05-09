@@ -37,8 +37,8 @@ const slides = new Vue(
             next : function() {
                 const newSlide = this.currentSlide++
                 console.log(newSlide);
-                const maxNext = this.currentSlide
-                if (maxNext == 5) {
+                this.currentSlide
+                if (this.currentSlide == 5) {
                     this.currentSlide = 0
                 }
                 
@@ -46,8 +46,8 @@ const slides = new Vue(
             prev : function() {
                 const newSlide = this.currentSlide--
                 console.log(newSlide);
-                const minPrev = this.currentSlide
-                if (minPrev == -1) {
+                this.currentSlide
+                if (this.currentSlide === -1) {
                     this.currentSlide = 5
                 }  
             },
