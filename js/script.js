@@ -51,6 +51,11 @@ const slides = new Vue(
                     this.currentSlide = 5
                 }  
             },
+            sowImage: function(index) {
+                console.log('show me' ,index);
+                this.currentSlide = index;
+            },
+            
 
     
 
